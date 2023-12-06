@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "Muli", sans-serif;
+}
+
+:root {
+	--background: linear-gradient(to right, #005c97, #363795);
+	--text: #fff;
+	--container: #070782;
+	--settings-container: rgb(11, 11, 194);
+	--container-shadow: #dcdcdc4d;
+	--inside: rgba(255, 255, 255, 0.1);
+	--heading: rgb(180, 180, 180);
+	--button: rgba(47, 7, 90, 0.915);
+	--button-hover: rgba(38, 6, 73, 0.915);
+	--settings: rgba(6, 73, 18, 0.3);
+}
+
+body {
+	background: var(--background);
+	color: var(--text);
+	display: flex;
+	justify-content: space-evenly;
+	margin-top: 150px;
+}
+
+.generator-container {
+	background-color: var(--container);
+	box-shadow: 0px 5px 20px var(--container-shadow);
+	padding: 20px;
+	width: 360px;
+}
+
+.title {
+	font-size: 28px;
+	margin: 10px 0px 20px;
+	text-align: center;
+}
+
+.viewbox {
+	background-color: var(--inside);
+	border-radius: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 20px;
+	letter-spacing: 1px;
+	padding: 14px 10px;
+	height: 55px;
+	width: 100%;
+	margin: 30px 0;
+}
+
+.instruction {
+	width: 100%;
+	text-align: center;
+	font-size: 12px;
+	color: var(--heading);
+}
+
+.buttons-container {
+	width: 100%;
+	height: 80px;
+	margin: 20px 0 10px;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.btn {
+	height: 60px;
+	width: 150px;
+	margin: 0 10px;
+	border: none;
+	border-radius: 8px;
+	color: var(--text);
+	font-size: 16px;
+	background-color: var(--button);
+	/* box-shadow: 1px 1px 3px var(--button-shadow); */
+	transition: transform 0.1s;
+}
+
+.btn:hover {
+	cursor: pointer;
+	background-color: var(--button-hover);
+}
+
+.btn:active {
+	cursor: pointer;
+	transform: translateY(3px) translateX(1px);
+}
+
+.settings-container {
+	background-color: var(--settings-container);
+	box-shadow: 0px 5px 20px var(--container-shadow);
+	padding: 20px;
+	width: 360px;
+}
+
+.settings-title {
+	font-size: 20px;
+	margin-bottom: 10px;
+	text-align: center;
+	color: var(--heading);
+}
+
+.length-container {
+	display: flex;
+	flex-direction: column;
+	background-color: var(--settings);
+	padding: 20px 10px;
+}
+
+.length {
+	font-size: 15px;
+	margin-bottom: 8px;
+	color: var(--heading);
+}
+
+.length::after {
+	content: attr(data-length);
+	font-size: 15px;
+	color: var(--heading);
+}
+
+.slider {
+	display: flex;
+	justify-content: space-between;
+}
+
+.slider > div {
+	font-size: 15px;
+	color: var(--heading);
+}
+
+.slider > input {
+	width: 250px;
+}
+
+.setting {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 8px 0;
+	background-color: var(--settings);
+	padding: 10px;
+	font-size: 15px;
+	color: var(--heading);
+}
+
+.copyrights {
+	position: absolute;
+	right: 30px;
+	bottom: 20px;
+}
