@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Password Generator</title>
+  <script type="module" crossorigin src="/assets/index-BUMxHd_p.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-oiWpmOeA.css">
+</head>
+
+<body>
+  <div class="generator-container">
+
+    <div>
+      <h2 class="title">Password Generator</h2>
+      <div class="viewbox">
+        <span id="result">Your Password!</span>
+      </div>
+      <div class="instruction">Choose you own setting and generate password by clicking "Generate password" button. Once
+        you generated it you can copy it by clicking "Copy" button.</div>
+    </div>
+    <div class="buttons-container">
+      <button class="btn" id="generate">
+        Generate password
+      </button>
+      <button class="btn" id="copy">
+        Copy
+      </button>
+    </div>
+  </div>
+
+
+
+  <div class="settings-container">
+    <h3 class="settings-title">Settings</h3>
+    <div class="length-container">
+      <div id="displayLength" class="length" data-length="18">Password length: </div>
+      <div class="slider">
+        <div>4</div>
+        <input id="length" type="range" min="4" max="32" value="18" />
+        <div>32</div>
+      </div>
+    </div>
+
+    <div>
+      <div class="setting">
+        <label>Include uppercase letters</label>
+        <input type="checkbox" id="uppercase" checked />
+      </div>
+
+      <div class="setting">
+        <label>Include lowercase letters</label>
+        <input type="checkbox" id="lowercase" checked />
+      </div>
+
+      <div class="setting">
+        <label>Include numbers</label>
+        <input type="checkbox" id="numbers" checked />
+      </div>
+
+      <div class="setting">
+        <label>Include symbols</label>
+        <input type="checkbox" id="symbols" checked />
+      </div>
+    </div>
+
+
+  </div>
+
+
+  <div class="copyrights">Copyright © <span id="recYear"></span> by Czarny, All rights reserved!</div>
+
+</body>
+
+</html>
